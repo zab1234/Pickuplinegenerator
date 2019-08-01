@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Pick-Up Line Generator</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="static/heroic-features.css" rel="stylesheet">
+
+</head>
+<style>
+  body{background-color:black}
+  div{background-color:black}
+</style>
+<body>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4"
+    style="background-color:black;">
+      <p><font color = "white"></p>
+      <h1 class="display-3">Pick-Up Line Generator</h1>
+      <p><font color = "white"></p>
+      <p class="lead">To generate your own eyeball crying pick-up line, select a category below. We hope you don't get your crush!</p>
+      </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://media.giphy.com/media/yuno6oK5RvfY4/giphy.gif" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Animals</h4>
+            <p class="card-text">Animals is the right choice. Get ready to cry and suck your eyeballs out.</p>
+          </div>
+          <div class="card-footer"
+          style="background-color:black;">
+            <form method='POST' action='/results'>
+              <input type="text" name="x" value="animal" style="opacity:0; height:0px;"/>
+              <input type="submit" class="btn btn-primary" value="Animals"/>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://media3.giphy.com/media/XCVm7xxtEolwc/giphy.gif" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Food</h4>
+            <p class="card-text">You like food? These pick-up lines will make you hungrier.</p>
+          </div>
+          <div class="card-footer"
+          style="background-color:black;">
+            <form method='POST' action='/results'>
+              <input type="text" name="x" value="food" style="opacity:0; height:0px;"/>
+              <input type="submit" class="btn btn-primary" value="Food"/>
+            </form>          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://media2.giphy.com/media/l0HlNsqRcBSNInrzO/giphy.gif" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Cheesy</h4>
+            <p class="card-text">Choose this cheesy generator to blow your mind. Surely, you will die of laughter.</p>
+          </div>
+          <div class="card-footer"
+          style="background-color:black;">
+            <form method='POST' action='/results'>
+              <input type="text" name="x" value="random" style="opacity:0; height:0px;"/>
+              <input type="submit" class="btn btn-primary" value="Cheesy"/>
+            </form>          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://i.gifer.com/GY0X.gif" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Nerdy</h4>
+            <p class="card-text">You're such a Nerd! Bwhahahahhah! Don't worry you'll still die.</p>
+          </div>
+          <div class="card-footer"
+          style="background-color:black;">
+            <form method='POST' action='/results'>
+              <input type="text" name="x" value="nerdy" style="opacity:0; height:0px;"/>
+              <input type="submit" class="btn btn-primary" value="Nerdy"/>
+            </form>          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
